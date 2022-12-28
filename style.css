@@ -9,6 +9,9 @@ h2 {
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
+  /* new code */
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -63,6 +66,8 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  /* new code */
+  overflow-wrap: break-word;
 }
 
 header nav ul li {
@@ -123,27 +128,40 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
-
-/* mobile */
-/* column */
-@media all and (max-width: 420px) {
-  main img {
-    /* display: flex;
+/* New code */
+main img {
+  /* display: flex;
     flex-direction: column; */
-    width: 100%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+/* -------  Media Query ------- */
+/* desktop */
+/* row */
+@media all and (min-width: 480px) {
+  /* header {
+    background-color: #ff385c;
+    padding: 20px 1900px 0 20px;
+    text-align: center;
+  }
+
+  img {
+    display: flex;
+    flex-direction: column;
   }
 
   nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
   }
-}
-
-/* desktop */
-/* row */
-@media all and (min-width: 480px) {
-
-
-  
+  .logo {
+    overflow-wrap: normal;
+  } */
 }
