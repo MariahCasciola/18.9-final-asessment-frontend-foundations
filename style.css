@@ -147,7 +147,6 @@ nav ul {
   /* padding-bottom: 18px; */
 }
 
-
 /* -------  Media Query ------- */
 /* desktop */
 /* row */
@@ -159,6 +158,9 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 0;
+  }
+  main img {
+    padding: 0;
   }
 
   html {
@@ -172,18 +174,37 @@ nav ul {
   }
 
   .navDiv {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin: 5px;
   }
 
-  .navComponents{
+  .navComponents {
     display: flex;
     flex-direction: row;
   }
 
   nav {
     display: flex;
+  }
+
+  .aboutContents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutContents div {
+    margin: 10px;
+  }
+
+  .aboutImage {
+    flex: 1;
+  }
+
+  .aboutParagraph {
+    flex: 2;
   }
 
   section#stay {
@@ -196,5 +217,4 @@ nav ul {
     font-size: 40px;
     padding: 10px;
   }
-
 }
