@@ -74,6 +74,12 @@ header nav ul li {
   list-style-type: none;
 }
 
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -139,29 +145,54 @@ main img {
 nav ul {
   display: flex;
   justify-content: center;
-  padding-bottom: 18px;
+  /* padding-bottom: 18px; */
 }
 
 /* -------  Media Query ------- */
 /* desktop */
 /* row */
+
 @media all and (min-width: 480px) {
-  /* header {
+  header {
     background-color: #ff385c;
-    padding: 20px 1900px 0 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
   }
 
-  img {
+  html {
+    display: flex;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  form input,
+  form select {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+  }
+  form button {
+    width: 8%;
+  }
+
+  nav {
+    display: flex;
+  }
+
+
+  section#stay {
     display: flex;
     flex-direction: column;
   }
 
-  nav ul {
-    display: flex;
-    justify-content: right;
-  }
   .logo {
     overflow-wrap: normal;
-  } */
+    font-size: 40px;
+    padding: 10px;
+  }
 }
