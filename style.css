@@ -170,18 +170,27 @@ nav ul {
   form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .navComponents {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    justify-content: space-between;
+  }
+
+  .buttonDiv {
+    flex: 1;
+    margin-left: 40px;
+    align-self: center;
   }
 
   .navDiv {
     display: flex;
     flex-direction: column;
     margin: 5px;
-  }
-
-  .navComponents {
-    display: flex;
-    flex-direction: row;
+    align-self: center;
   }
 
   nav {
@@ -224,7 +233,7 @@ nav ul {
     align-items: center;
   }
   .row {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
