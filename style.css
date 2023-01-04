@@ -95,6 +95,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  justify-content: space-between;
 }
 
 form label {
@@ -117,7 +118,7 @@ form button {
 }
 
 /* code I added below */
-form div {
+.navDiv {
   display: flex;
   justify-content: space-between;
 }
@@ -136,8 +137,6 @@ footer p {
 
 /* New code */
 main img {
-  /* display: flex;
-    flex-direction: column; */
   width: 100%;
   padding-bottom: 20px;
 }
@@ -147,6 +146,7 @@ nav ul {
   justify-content: center;
   /* padding-bottom: 18px; */
 }
+
 
 /* -------  Media Query ------- */
 /* desktop */
@@ -168,22 +168,23 @@ nav ul {
   form {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
-  form input,
-  form select {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+  .navDiv {
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
   }
-  form button {
-    width: 8%;
+
+  .navComponents{
+    display: flex;
+    flex-direction: row;
   }
 
   nav {
     display: flex;
   }
-
 
   section#stay {
     display: flex;
@@ -195,4 +196,5 @@ nav ul {
     font-size: 40px;
     padding: 10px;
   }
+
 }
